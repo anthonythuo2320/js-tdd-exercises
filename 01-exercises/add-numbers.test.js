@@ -25,9 +25,12 @@ function add() {
 }
 
 /*
-This is a sample test - remove it and write AT LEAST two more tests to prove the function works as expected  
+This is a sample test - remove it and write AT LEAST two more tests to prove the function works as expected */ 
 test('add should add two numbers', function(){
     var result = add(1, 2);
     expect(result).toEqual(3);
 });
-*/
+test('add should add two numbers', function(){
+    var result = add(1, 2, 5, 4);
+    expect(result).toEqual(12);
+});

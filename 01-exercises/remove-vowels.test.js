@@ -11,8 +11,11 @@
  *      - Change the implementatino to remove the letter (capital and small letters)
  *       (maybe Google Case Insensitive Regular Expressions and read about regular expressions and see how you can use them)
  */
-
+var result=0
 function removeVowels(phrase) {
+    for(i=0;i<phrase.length; i++){
+        if (phrase.length===)
+    }
     return phrase.replace(/[aeiou]/g, '');
 }
 
@@ -23,3 +26,12 @@ test('removeVowels should remove the Os', function(){
     expect(result).toBe('Tm');
 });
 */
+test('removeVowels should remove the As',function(){
+    var result = removeVowels('jane');
+    expect(result).toBe('jn');
+})
+
+test('removeVowels should return 0 if no vowels found',function(){
+    var result=removeVowels('dry');
+    expect(result).toBe('0')
+})
